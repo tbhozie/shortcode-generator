@@ -53,7 +53,10 @@ if ( !class_exists ('wp_shortcode_generator_plugin')) {
 			<label style="display:block;margin-bottom: 10px;">Enter your HTML / JavaScript Code here</label>
 			<textarea style="display:block;" name="shortcode_content" value=""><?php echo $shortcode_content; ?></textarea>
 			<div id="editor"><?php echo $shortcode_content; ?></div>
-			<script src="/wp-content/plugins/shortcode_generator/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+			<?php
+				$pluginDir = plugin_dir_url( __FILE__ ); 
+			?>
+			<script src="<?php echo $pluginDir.'src-min-noconflict/ace.js'?>" type="text/javascript" charset="utf-8"></script>
 			<script>
 				var editor = ace.edit("editor");
 				var textarea = jQuery('textarea[name="shortcode_content"]').hide();
