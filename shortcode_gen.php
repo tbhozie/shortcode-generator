@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Shortcode Generator - Code Snippets
+Plugin Name: Shortcode Generator - Shortcode Code Snippets
 Description: This plugin allows you to create HTML code snippets, to easily use as shortcodes. Uses the ACE code editor for HTML code editing.
 Author: Tyler Hozie
 Version: 1.0
